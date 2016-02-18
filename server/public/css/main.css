@@ -9,7 +9,7 @@ input:-webkit-autofill { -webkit-box-shadow:0 0 0 500px white inset; }
 }
 
 .description {
-	font-family:'STXihei';
+	font-family:'Microsoft YaHei','SimHei','STXihei';
  	font-size:1.3em;
 	padding-top:1em;
 	padding-bottom:0. em;
