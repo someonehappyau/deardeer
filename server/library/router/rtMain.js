@@ -5,7 +5,8 @@ var router=express.Router();
 var path=require('path');
 
 router.get('/', function(req,res){
-	res.status(200).render('index');
+	//res.status(200).render('index');
+	res.redirect('/flower');
 });
 
 router.get('/flower',function(req,res){
