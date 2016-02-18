@@ -1,28 +1,31 @@
 extends layout
 
 block content
-	- var list_left=['3703','3773','3716','3738','3717','3758','3743','3828','3832','3931','3943','3954','3959','3979']
-	- var list_right=['3782','3784','3722','3728','3721','3761','3779','3800','3851','3853','3936','3950','3955','3970','3975']
+	- var list_left=['9','905','672','675','683','763']
+	- var list_right=['674','669','677','681','762']
 	div(class='titleimage')
-		img(class='ui fluid image' src='/img/flower/flower_header.jpg')
+		img(class='ui fluid image headerimage' src='/img/wedding/wedding_header.jpg')
 	div(class='ui container ')
 		div(class='ui grid')
 			div(class='one wide column')
 			div(class='fourteen wide column')
-				p(class='description') 我们喜爱美丽的鲜花，鲜花让人感受到生活的美好，感到快乐。我们也喜欢把这份美好和快乐传递到所有喜爱鲜花的人手中。
+				p(class='description') 婚礼是一辈子最重要的日子之一，就让小鹿来为你用美丽的鲜花装点吧，留下一辈子最美好的回忆。
 				div(class='ui section divider')
-				div(class='ui two column grid' style='padding-left:1em;padding-right:1em')
+				div(class='ui two column grid gallery' style='padding-left:1em;padding-right:1em')
 					div(class='column')
 						div(class='ui one column grid')
 							each val in list_left
-								div(class='column' style='padding:0.5em')
-									img(class='ui fluid image transition visible' src='/img/flower/DSC_#{val}.JPG')
+								div(class='column image' style='padding:0.5em')
+									img(class='ui fluid image' data-src='/img/wedding/wedding-#{val}.jpg')
 					div(class='column')
 						div(class='ui one column grid')
 							each val in list_right
-								div(class='column' style='padding:0.5em')
-									img(class='ui fluid image transition visible' src='/img/flower/DSC_#{val}.JPG')
+								div(class='column image' style='padding:0.5em')
+									img(class='ui fluid image' data-src='/img/wedding/wedding-#{val}.jpg')
 
 			div(class='one wide column')
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js')
+	script(src='/semantic/semantic.js')
+	script(src='/js/wedding.js')
 
 
