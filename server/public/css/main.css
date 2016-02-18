@@ -36,3 +36,7 @@ input:-webkit-autofill { -webkit-box-shadow:0 0 0 500px white inset; }
 .headerimage {
 	box-shadow:0 2px 3px rgba(0,0,0,0.2);
 }
+
+.fixed.top.hidden{
+	display:none;
+}
