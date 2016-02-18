@@ -1,0 +1,34 @@
+input:-webkit-autofill { -webkit-box-shadow:0 0 0 500px white inset; }
+
+.main.menu {
+	margin-top: 4em;
+	border-radius: 0;
+	border: none;
+	box-shadow: none;
+	transition: box-shadow 0.5s ease, padding 0.5s ease;
+}
+
+.description {
+	font-family:'STXihei';
+ 	font-size:1.3em;
+	padding-top:1em;
+	padding-bottom:0. em;
+}
+
+.imgdiv {
+	padding-top:0.5em;
+	padding-bottom:0.5em;
+	padding-left:0.5em;
+	padding-right:0.5em;
+}
+
+.pageheader {
+	padding-top:2em;
+	padding-bottom:2em;
+}
+
+.titleimage {
+	padding-left:0em !important;
+	padding-right:0em !important;
+	padding-bottom:2em !important;
+}

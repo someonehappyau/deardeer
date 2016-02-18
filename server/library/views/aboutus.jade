@@ -1,0 +1,48 @@
+extends layout
+
+block content
+	div(class='titleimage')
+		img(class='ui fluid image' src='/img/flower/flower_header.jpg')
+	div(class='ui container ')
+		div(class='ui grid')
+			div(class='one wide column')
+			div(class='fourteen wide column')
+				p(class='description') 在亲爱小鹿，我们最喜欢做的事情便是挑选各种美丽的花草，搭配出各种美丽的花束。我们在各种节日制作应景的花束，帮助人们表达心情，也帮助新人们用鲜花装扮他们的婚礼。
+				p(class='description') 我们很乐意与所有爱花爱美的朋友交流各种有关鲜花的话题，也非常乐意帮助有需要的朋友们解决有关鲜花的各种问题。
+				form(class='ui form')
+					h4(class='ui dividing header') Leave a message
+					div(class='field')
+						label Name
+						div(class='two fields')
+							div(class='field')
+								input(name='firstname' type='text' placeholder='First Name')
+							div(class='field')
+								input(name='lastname' type='text' placeholder='Last Name')
+					div(class='field')
+						label Email
+						div(class='field')
+							input(name='email' type='text' placeholder='Email')
+					div(class='field')
+						label Contact Number
+						div(class='field')
+							input(name='contactnumber' type='text' placeholder='Contact Number')
+					div(class='field')
+						label Message
+						textarea(name='message' rows='8')
+					div(class='ui submit button') Submit
+					div(class='ui reset button' onclick='$(".ui.form").removeClass("error");') Reset
+					div(class='ui error message')
+			div(class='one wide column')
+	div(class='ui page dimmer success')
+		div(class='content')
+			div(class='center')
+				h1 Thank you for leaving a message.
+	div(class='ui page dimmer error')
+		div(class='content')
+			div(class='center')
+				i(class='warning sign icon large' style='font-size:4em;color:red')
+				h1 Sorry, there's an error when leaving a message.
+	script(src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.js')
+	script(src='/semantic/semantic.js')
+	script(src='/js/aboutus.js')
+
