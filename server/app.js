@@ -17,6 +17,6 @@ app.use('/semantic',express.static(path.join(__dirname,'../semantic/dist')));
 app.use(express.static(__dirname+'/public'))
 
 
-app.listen(3010)
+app.listen(80)
 
 process.on('uncaughtException', err=>console.log('Caught exception: '+err))
